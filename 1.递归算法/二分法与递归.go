@@ -20,7 +20,7 @@ func dichotomy(i []int, n int, l, r int) int {
 		return mid
 	} else if i[mid] > n {
 		r = mid - 1
-		return dichotomy(i, n, l, 90)
+		return dichotomy(i, n, l, r)
 	} else if i[mid] < n {
 		l = mid + 1
 		return dichotomy(i, n, l, r)
